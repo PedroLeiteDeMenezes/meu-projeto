@@ -1,13 +1,17 @@
 import React from "react";
+
+import logoImg from "../../assets/images/logo.png"
+
 import "./styles.css"
 
-class Navbar extends React.Component{
+
+export class Navbar extends React.Component{
     render(){
         return(
         <header>
             <nav id="navbar">
                 <div className="nav-brand">
-                    <img src="" alt="" />
+                    <img src={logoImg} alt="" />
                     <h1>Space Flight News</h1>
                 </div>
 
@@ -22,5 +26,3 @@ class Navbar extends React.Component{
         );
     }
 }
-
-export default Navbar
